@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 20px;
+}
+
+.encabezado {
+    grid-column: 2 / span 1;
+    background-color: blue;
+    border-radius: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.navegacion {
+    grid-column: 1 / span 1;
+    color: white;
+}
+
+.boton-navegacion {
+    background-color: blue;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    text-align: center;
+}
+
+.menu-navegacion {
+    padding: 20px;
+}
+
+.contenido {
+    grid-column: 2 / span 1;
+    text-align: left;
+}
+
+.barra-lateral {
+    grid-column: 3 / span 1;
+    background-color: rgb(252, 194, 199);
+    border-radius: 3px;
+}
+
+.pie-pagina {
+    grid-column: 1 / -1;
+    background-color: greenyellow;
+    border-radius: 3px;
+}
